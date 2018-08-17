@@ -10,8 +10,7 @@ Welcome to Seismic-Python's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-   core/index
-
+   velocity
 
 Indices and tables
 ==================

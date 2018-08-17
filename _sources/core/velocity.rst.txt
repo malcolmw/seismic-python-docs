@@ -1,6 +1,6 @@
 .. Seismic-Python documentation test file
 
-seispy root
+seispy velocity
 ==========================================
 
 .. toctree::
