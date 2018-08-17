@@ -16,5 +16,14 @@ help:
 
 # Catch-all target: route all unknown targets to Sphinx using the new
 # "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).
+html: Makefile
+	rm -frv .bkup
+	mkdir -p .bkup
+	rsync -avP LICENSE README.md Makefile source .bkup
+	rm -frv *
+	rsync -avP .bkup/ .
+	@$(SPHINXBUILD) -M html "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
+	mv $(BUILDDIR)/html/* .
+
 %: Makefile
 	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
