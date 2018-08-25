@@ -6,11 +6,15 @@
 Welcome to Seismic-Python's documentation!
 ==========================================
 
+.. warning:: This is version 0.0alpha! Documentation is largely missing
+             and functionality is subject to change without notice!
+
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :caption: Contents:
 
-   core/index
+   api/index
+   examples/index
 
 
 Indices and tables
