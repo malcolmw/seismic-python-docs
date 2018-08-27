@@ -14,7 +14,7 @@ Welcome to Seismic-Python's documentation!
    :caption: Contents:
 
    api/index
-   examples/index
+   tutorials/index
 
 
 Indices and tables

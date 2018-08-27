@@ -6,6 +6,13 @@
 API Documentation
 =================
 
+This is the API documentation for the `seispy` package. `seispy` is divided
+into two submodules: `core` and `pandas`. The *core* submodule acts as a
+catch-all for most functionality right now, and the *pandas* submodule
+contains I/O functionality for reading and writing database tables into
+pandas DataFrame objects.
+
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:

@@ -1,0 +1,195 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>seispy.pandas.catalog &#8212; Seismic-Python 0.0a0 documentation</title>
+    <link rel="stylesheet" href="../../_static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Tutorials" href="../../tutorials/index.html" />
+    <link rel="prev" title="seispy.pandas.time" href="time.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="../../tutorials/index.html" title="Tutorials"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="time.html" title="seispy.pandas.time"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">Seismic-Python 0.0a0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../index.html" >API Documentation</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="index.html" accesskey="U">seispy.pandas</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="seispy-pandas-catalog">
+<h1>seispy.pandas.catalog<a class="headerlink" href="#seispy-pandas-catalog" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<span class="target" id="module-seispy.pandas.catalog"></span><dl class="class">
+<dt id="seispy.pandas.catalog.Catalog">
+<em class="property">class </em><code class="descclassname">seispy.pandas.catalog.</code><code class="descname">Catalog</code><span class="sig-paren">(</span><em>path=None</em>, <em>fmt='fwf'</em>, <em>schema='css3.0'</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/seispy/pandas/catalog.html#Catalog"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#seispy.pandas.catalog.Catalog" title="Permalink to this definition">¶</a></dt>
+<dd><p>An earthquake catalog.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>fmt</strong> (<em>str</em>) – Data format - (“csv”, fwf”).</li>
+<li><strong>schema</strong> (<em>str</em>) – Data schema - (“css3.0”, “scsn1.0”, “hys1.0”, “growclust1.0”).</li>
+<li><strong>kwargs</strong> (<em>dict</em>) – Passed directly to underlying IO function.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="seispy.pandas.catalog.Catalog.add_null">
+<code class="descname">add_null</code><span class="sig-paren">(</span><em>tables</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/seispy/pandas/catalog.html#Catalog.add_null"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#seispy.pandas.catalog.Catalog.add_null" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add null row to table(s).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>tables</strong> (<em>str</em><em>,</em><em>list</em>) – Table or list of tables to add null row(s) to.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="seispy.pandas.catalog.Catalog.add_row">
+<code class="descname">add_row</code><span class="sig-paren">(</span><em>table</em>, <em>data</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/seispy/pandas/catalog.html#Catalog.add_row"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#seispy.pandas.catalog.Catalog.add_row" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add a new row of data to table.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>table</strong> (<em>str</em>) – Table to add data to.</li>
+<li><strong>data</strong> (<em>dict</em>) – Data to append.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="seispy.pandas.catalog.Catalog.append">
+<code class="descname">append</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/seispy/pandas/catalog.html#Catalog.append"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#seispy.pandas.catalog.Catalog.append" title="Permalink to this definition">¶</a></dt>
+<dd><p>Append catalog data to existing Catalog instance.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="seispy.pandas.catalog.Catalog.save">
+<code class="descname">save</code><span class="sig-paren">(</span><em>outfile</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/seispy/pandas/catalog.html#Catalog.save"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#seispy.pandas.catalog.Catalog.save" title="Permalink to this definition">¶</a></dt>
+<dd><p>Save a catalog using pandas.HDFStore.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="seispy.pandas.catalog.Catalog.write">
+<code class="descname">write</code><span class="sig-paren">(</span><em>path</em>, <em>tables=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/seispy/pandas/catalog.html#Catalog.write"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#seispy.pandas.catalog.Catalog.write" title="Permalink to this definition">¶</a></dt>
+<dd><p>Output as formatted text files.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>path</strong> (<em>str</em>) – Output path.</li>
+<li><strong>tables</strong> (<em>list</em>) – List of tables to write.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="time.html"
+                        title="previous chapter">seispy.pandas.time</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="../../tutorials/index.html"
+                        title="next chapter">Tutorials</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../_sources/api/pandas/catalog.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="../../tutorials/index.html" title="Tutorials"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="time.html" title="seispy.pandas.time"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">Seismic-Python 0.0a0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../index.html" >API Documentation</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="index.html" >seispy.pandas</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2018, Malcolm White.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.5.
+    </div>
+  </body>
+</html>
